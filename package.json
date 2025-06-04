@@ -1,0 +1,29 @@
+{
+  "name": "performance-test-k6",
+  "version": "1.0.0",
+  "description": "K6 performance testing project with multiple test types and visual report generation.",
+  "main": "generateReport.js",
+  "scripts": {
+    "test:load": "k6 run scripts/load-test.js",
+    "test:stress": "k6 run scripts/stress-test.js",
+    "test:spike": "k6 run scripts/spike-test.js",
+    "test:volume": "k6 run scripts/volume-test.js",
+    "test:endurance": "k6 run scripts/endurance-test.js",
+    "test:resilience": "k6 run scripts/resilience-test.js",
+    "test:scalability": "k6 run scripts/scalability-test.js",
+    "report": "node generateReport.js"
+  },
+  "keywords": [
+    "k6",
+    "performance",
+    "load-testing",
+    "stress-testing",
+    "automation",
+    "report"
+  ],
+  "author": "Cecília",
+  "license": "MIT",
+  "dependencies": {
+    "k6-html-reporter": "^3.0.4"
+  }
+}
