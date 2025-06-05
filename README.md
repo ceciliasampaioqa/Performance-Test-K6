@@ -33,6 +33,18 @@ PERFORMANCE-TEST-K6/
 
 
 ```
+## 🧪 Performance Test Documentation - K6
+
+| **ID** | **Test Name**    | **Description**                                              | **Script (`.js`)**    | **Purpose**                                  | **Simulated Scenario**              | **Key Metric**             |
+| ------ | ---------------- | ------------------------------------------------------------ | --------------------- | -------------------------------------------- | ----------------------------------- | -------------------------- |
+| T01    | Load Test        | Tests the system under expected user traffic.                | `load-test.js`        | Validate performance under normal usage.     | 50 virtual users for 1 min          | Average response time      |
+| T02    | Stress Test      | Pushes the system beyond its limits.                         | `stress-test.js`      | Identify the system’s breaking point.        | From 10 to 500 users over 2 min     | Error rate & response time |
+| T03    | Spike Test       | Sends sudden spikes of traffic to the system.                | `spike-test.js`       | Check resilience to sudden load bursts.      | 300 users for 10 seconds            | Error rate                 |
+| T04    | Volume Test      | Evaluates how the system handles large volumes of data.      | `volume-test.js`      | Validate large data processing.              | 1,000 requests with large payload   | Throughput                 |
+| T05    | Endurance Test   | Runs the test over a long period.                            | `endurance-test.js`   | Check memory usage and stability over time.  | 50 users for 30 min                 | Consistent performance     |
+| T06    | Resilience Test  | Tests how the system recovers from failure.                  | `resilience-test.js`  | Evaluate system recovery ability.            | Requests with simulated instability | Time to recover            |
+| T07    | Scalability Test | Measures system performance as the load increases gradually. | `scalability-test.js` | Evaluate scalability under incremental load. | Gradual increase up to 300 users    | Performance per increment  |
+
 
 ## 🚀 🧪 Available Test Scenarios
 
